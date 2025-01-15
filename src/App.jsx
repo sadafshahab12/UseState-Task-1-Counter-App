@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className=" bg-bgImage h-screen bg-cover bg-no-repeat p-5">
+      <div className=" bg-bgImage sm:h-[100vh] h-auto bg-cover bg-no-repeat p-5">
         <h1 className="text-2xl text-center font-semibold py-2">Counter App</h1>
         <div className=" max-w-md mx-auto">
           <div className="bg-[#ffc107] p-10 flex flex-col justify-center items-center gap-5 w-full  rounded-tr-2xl rounded-tl-2xl">
