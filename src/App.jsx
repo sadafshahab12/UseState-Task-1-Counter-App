@@ -6,7 +6,12 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const increase = () => {
-    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => {
+      if (prevCount >= 80) {
+        return 0;
+      }
+      return prevCount + 1;
+    });
   };
   const decrease = () => {
     setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : prevCount));
